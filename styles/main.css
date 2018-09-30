@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:400,700');
+
+body{
+  background: black;  
+}
+
+.btn {font-family: "Lato";
+  color: white;
+  font-size: 35px;
+  background: black;
+  font-family: "Lato";
+  border-color: rgb(80, 249, 255);
+  width: 700px;
+  margin: 0px 0px;  
+}
+.picture {
+  display: block;
+  margin: 20px auto;   
+  text-align: center;
+  display: flex;
+}
+
+.pictures {
+  display:inline-block;
+  margin: 0px auto; 
+}
+
+.tools{
+  display:flex;
+  flex-direction:row;
+  justify-content: space-between;
+}
+
+.leftbar { 
+  display:inline-block;
+}
+.rightbar{
+  display:inline-block;
+  background: black;  
+  width: 300px;
+  height: 550px; 
+  color: black; 
+}
+.rigth{
+  background-color: black;
+  border: 0px;
+  
+}
+.rule{
+  color: white;
+  margin: 50px 50px;
+}
+.title {
+  font-family: "Lato";
+  height: 150px;
+  color: white;
+  margin: 10px 10px;
+  font-size: 60px; 
+  text-align: center ;  
+  display: flex;
+  align-items: center ;
+  justify-content: center
+}
+
+.buttons {
+  margin: 20px ;  
+  padding: 40px;
+  text-align: center 
+}
+
+.start{
+  background: url(../images/start.png) no-repeat; 
+  transition: all 0.2s ease;  
+  display: block;
+  margin: 20px auto; 
+}
+.start:hover{
+  background: url(../images/start2.png) no-repeat; 
+  transition: all 0.2s ease;
+  display: block;
+  margin: 20px auto; 
+}
+
+.rules{
+  background: url(../images/rules.png) no-repeat; 
+  transition: all 0.2s ease; 
+  display: block;
+  margin: 20px auto;   
+}
+.rules:hover{
+  background: url(../images/rules2.png) no-repeat; 
+  transition: all 0.2s ease;
+  display: block;
+  margin: 20px auto; 
+}
