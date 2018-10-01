@@ -14,6 +14,7 @@ const initialState = {
   true: 3,
   picture: `./images/1.jpg`,
   leftbar: `./images/11.jpg`,
+  failtotal: 0,
 }
 
 export function Questions(state = initialState, action) {
@@ -35,7 +36,7 @@ export function Questions(state = initialState, action) {
         }) 
         case 'ANSWER_FAIL':           
         return Object.assign({}, state, {
-          total: state.total, 
+          total: 0, 
           title: 'Фамилия принца Артаса?',
           first: 'Анвин',
           second: 'Фандрал',
@@ -44,11 +45,12 @@ export function Questions(state = initialState, action) {
           number: 1,
           true: 3,
           picture: `./images/1.jpg`,
-          leftbar: `./images/11.jpg`,      
+          leftbar: `./images/11.jpg`, 
+          failtotal: state.total,     
         }, history.push('/total') )
         case 'WIN_GAME':
         return Object.assign({}, state, {
-          total: state.total, 
+          total: 0, 
           title: 'Фамилия принца Артаса?',
           first: 'Анвин',
           second: 'Фандрал',

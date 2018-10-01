@@ -6,12 +6,12 @@ import { Link } from 'react-router-dom';
 class Total extends React.Component {
     render(){
         const {questions} =this.props ;
-        console.log(questions.total);
+        console.log(questions.failtotal);
         return( 
             <div>                     
                 <div className="title">Ваш выигрыш составил</div>
                 <img className="picture" src={total}/>
-                <div className="title">{questions.total} &nbsp; золотых</div>
+                <div className="title">{questions.failtotal} &nbsp; золотых</div>
                 <Link to="/"> 
                     <div  className="title">Выйти в меню</div>
                 </Link>
